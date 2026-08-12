@@ -34,3 +34,8 @@
 // - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD`
 // #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif // POINTING_DEVICE_ENABLE
+
+/* Split serial link tuning: lower speed trades throughput for timing
+ * margin, useful if the TRRS link is marginal (e.g. suspected ESD damage
+ * on one half's serial pin) but still functional. */
+#define SELECT_SOFT_SERIAL_SPEED 0
